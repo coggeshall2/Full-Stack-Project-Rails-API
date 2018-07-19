@@ -1,4 +1,4 @@
-<% project_name = 'Full_Stack_Project_Rails_API' %>
+<% project_name = 'Full-Stack-Project-Rails-API' %>
 
 default: &default
   adapter: postgresql
@@ -7,8 +7,8 @@ default: &default
 
 development:
   <<: *default
-  database: Full_Stack_Project_Rails_API_development
+  database: Full-Stack-Project-Rails-API_development
 
 test:
   <<: *default
-  database: Full_Stack_Project_Rails_API_test
+  database: Full-Stack-Project-Rails-API_test
