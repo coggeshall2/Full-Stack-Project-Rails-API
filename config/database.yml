@@ -1,0 +1,14 @@
+<% project_name = 'Full_Stack_Project_Rails_API' %>
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch('RAILS_MAX_THREADS') { 5 } %>
+
+development:
+  <<: *default
+  database: Full_Stack_Project_Rails_API_development
+
+test:
+  <<: *default
+  database: Full_Stack_Project_Rails_API_test
